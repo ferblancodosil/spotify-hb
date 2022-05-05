@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+import InfoSongComponent from "./component/infoSongComponent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InfoSongComponent
+        author="Perales"
+        songName="Un velero llamado libertad"
+        cdPic="no tiene foto"
+        length="4:17"
+        discTitle="Grandes Exitos de Perales"
+      />
     </div>
   );
 }
