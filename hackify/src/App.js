@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import "./App.css";
+import Lyrics from "./components/Lyrics";
+// como sanitizar html en react
 function App() {
+  const [letter] = useState(
+    "<br>hola que tal estas <br/> te pregunto a tiiiiiiii"
+  );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Lyrics letter={letter} />
     </div>
   );
 }
