@@ -1,0 +1,23 @@
+{
+  "name": "spotify-hb",
+  "version": "1.0.0",
+  "description": "## Introduction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferblancodosil/spotify-hb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferblancodosil/spotify-hb/issues"
+  },
+  "homepage": "https://github.com/ferblancodosil/spotify-hb#readme",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "prettier": "^2.6.2"
+  }
+}
