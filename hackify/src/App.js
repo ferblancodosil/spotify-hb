@@ -1,17 +1,30 @@
 // import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
 import InfoSongComponent from "./component/infoSongComponent";
 
 function App() {
+  const [songs, setSongs] = useState([]);
+  setSongs([
+    {
+      author: "Perales",
+      songName: "Un velero llamado libertad",
+      cdPic: "no tiene foto",
+      length: "4:17",
+      discTitle: "Grandes Exitos de Perales",
+    },
+  ]);
+
   return (
     <div className="App">
-      <InfoSongComponent
-        author="Perales"
-        songName="Un velero llamado libertad"
-        cdPic="no tiene foto"
-        length="4:17"
-        discTitle="Grandes Exitos de Perales"
-      />
+      {songs.map((song, index) => (
+        <InfoSongComponent
+          author={song.author}
+          songName={song.songName}
+          cdPic={song.cdPic}
+          key={index}
+        />
+      ))}
     </div>
   );
 }
