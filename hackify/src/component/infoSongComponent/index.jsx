@@ -7,7 +7,7 @@ function InfoSongComponent({ author, songName, cdPic, length, discTitle }) {
         <img
           src={cdPic}
           className="infoSong"
-          id="infoSongPic"
+          id="infoSongPic" //evitar, usamos clases
           alt={discTitle}
         ></img>
         <div className="infoSong">{length}</div>
