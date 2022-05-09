@@ -4,8 +4,7 @@ import "./App.css";
 import InfoSongComponent from "./component/infoSongComponent";
 
 function App() {
-  const [songs, setSongs] = useState([]);
-  setSongs([
+  const [songs, setSongs] = useState([
     {
       author: "Perales",
       songName: "Un velero llamado libertad",
@@ -13,11 +12,13 @@ function App() {
       length: "4:17",
       discTitle: "Grandes Exitos de Perales",
     },
-  ]);
+  ])
+
 
   return (
     <div className="App">
       {songs.map((song, index) => (
+        // InfoSongComponent(song)
         <InfoSongComponent
           author={song.author}
           songName={song.songName}
