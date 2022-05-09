@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function SearchBar({ handler }) {
   const handleChange = (e) => {
-    handler(e.target.value);
+    handler({ text: e.target.value });
   };
   return (
     <input
