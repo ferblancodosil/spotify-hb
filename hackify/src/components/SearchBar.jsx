@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 function SearchBar({ handler }) {
-  // const [search, setSerch] = useState();
   const handleChange = (e) => {
     handler(e.target.value);
   };
@@ -18,5 +17,4 @@ SearchBar.PropType = {
   handler: PropTypes.func.isRequired,
 };
 
-//Busqueda.propType = {};
 export default SearchBar;
